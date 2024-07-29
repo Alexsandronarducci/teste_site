@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Portfólio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f8f0f0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #ff9aa2;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #ff6b6b;
+            font-size: 24px;
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            padding: 20px;
+            background: white;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #ff6b6b;
+            font-family: 'Georgia', serif;
+        }
+        .section img {
+            max-width: 100%;
+            border-radius: 15px;
+            margin: 10px 0;
+        }
+        .carousel {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-images img {
+            flex: 0 0 auto;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin: 0 5px;
+        }
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .carousel-control button {
+            background: rgba(255,255,255,0.7);
+            color: #ff6b6b;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 50%;
+        }
+        .carousel-control button:hover {
+            background: rgba(255,255,255,1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #ff4d4d;
+        }
+        footer {
+            background-color: #ff9aa2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 4px solid #ff6b6b;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+            }
+            .section {
+                padding: 15px;
+            }
+            .carousel-control button {
+                font-size: 20px;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 18px;
+            }
+            .section {
+                padding: 10px;
+            }
+            .carousel-control button {
+                font-size: 18px;
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Uma história bem clichê</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Alguns dos nossos rolês, um portfólio nosso digital e um motivo do porquê eu não trabalho com telas para o usuário
+                na programção KKKKKK</h2>
+        </section>
+
+        <section class="section">
+            <h2>Momentos Especiais</h2>
+            <div>
+                <h3>Primeira vez que me interessei pela gatinha</h3>
+                <img src="ahoy.jpeg" alt="Nosso Primeiro Encontro">
+                <p>Primeiro dia que dei uma bola fora perguntando se queria comer hambúrgue KKKKK
+                    A câmera de milhões do meu Xiaomi Pocket ultra.</p>
+            </div>
+            <div>
+                <h3>Primeiro Encontrinho</h3>
+                <p>Saída pra comer macarrão que no fim não comemos macarrão, fomos pro Madero e que não sei pq karalhos eu escrevi que não ia te sequestrar e que você poderia ficar tranquila KKKKKK, não temos foto desse dia</p>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="img1.jpeg" alt="Primeira vez saindo">
+                        <img src="img2.jpeg" alt="Primeira vez saindo">
+                        <img src="img3.jpeg" alt="Primeira vez saindo">
+
+                    </div>
+                    <div class="carousel-control">
+                        <button onclick="prevSlide()">&#10094;</button>
+                        <button onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>A gatinha aceitou sair cmg pela segunda vez KKKK</h3>
+                <img src="teste.jpeg" alt="Primeira vez saindo">
+                <p>Esse dia foi doce, literalmente KKKKKK mds que doce doce daquela padaria</p>
+            </div>
+            <div>
+                <h3>A gatinha aceitou sair cmg pela terceira vez heheh</h3>
+                <img src="segunda vez.jpeg" alt="Primeira vez saindo">
+                <p>Esse dia foi massa, não foi o meu preferido entre todos que tivemos mas foi um dos dias que eu tava bem tranquilo e com menos medo de tudo KKKK</p>
+            </div>
+            <div>
+                <h3>Aqui o negócio ficou sério mds</h3>
+                <img src="mãe.jpeg" alt="Primeira vez saindo">
+                <p>As nossas caras tipo: mds alguém tira a gente daqui por favor KKKKKK, desespero</p>
+            </div>
+            <div>
+                <h3>Cineminha totoso</h3>
+                <img src="cinema.jpeg" alt="Primeira vez saindo">
+                <p>Esse foi o meu dia favorito qnd a gnt saiu, ficamos de mãos dadas, e nossa o qnt a gente conversou, de vdd não queria que aquele momento acabasse nunca mais, tirando o fato que se quase morreu no final do cinema com 38 de febre KKKKKKKKKK</p>
+            </div>
+            <div>
+                <h3>Já ta no final eu juro</h3>
+                <p>E bom, acho que é isso, o início de um ciclo muito especial pra mim, e que venham mais momentos, risadas, fotos e presentes, até pq hipotéticamente, temos a vida inteira juntos né KKKKK</p>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 [Alek] & [Lara]. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel-images img');
+            const totalSlides = slides.length;
+            if (index >= totalSlides) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = totalSlides - 1;
+            } else {
+                currentIndex = index;
+            }
+            const offset = -(currentIndex * (slides[0].clientWidth + 10)); // Ajuste o cálculo do deslocamento de acordo com o tamanho das imagens
+            document.querySelector('.carousel-images').style.transform = `translateX(${offset}px)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+    </script>
+</body>
+</html>
